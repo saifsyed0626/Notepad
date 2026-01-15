@@ -1,0 +1,19 @@
+:root{
+  --toolbar-bg:#222;
+  --toolbar-fg:#fff;
+  --accent:#0aa;
+}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif; margin:1rem}
+.toolbar{
+  position:fixed; top:12px; right:12px; background:var(--toolbar-bg); color:var(--toolbar-fg);
+  padding:8px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,.25); z-index:9999;
+}
+.toolbar button{background:transparent; color:var(--toolbar-fg); border:1px solid rgba(255,255,255,.08); padding:6px 8px; margin:0 4px; border-radius:4px; cursor:pointer}
+.toolbar button:hover{background:rgba(255,255,255,.03)}
+.console{position:fixed; left:12px; right:12px; bottom:12px; height:240px; background:#0b0b0b; color:#e6e6e6; border-radius:8px; box-shadow:0 8px 30px rgba(0,0,0,.4); overflow:hidden; display:flex; flex-direction:column}
+.console.hidden{display:none}
+.console-header{padding:8px 12px; background:#111; font-weight:600; border-bottom:1px solid rgba(255,255,255,.03)}
+.console-output{padding:10px; font-family:Consolas,monospace; font-size:13px; overflow:auto; flex:1}
+.console-line{padding:2px 0}
+.console-line .time{color:#888; margin-right:8px}
+.console-line.error{color:#ff6b6b}

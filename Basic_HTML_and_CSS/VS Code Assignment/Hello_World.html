@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hello World — Debug Toolbar</title>
+  <link rel="stylesheet" href="debug-toolbar.css">
+</head>
+<body>
+  <div class="toolbar" id="debug-toolbar">
+    <button id="btn-run">Run</button>
+    <button id="btn-step">Step</button>
+    <button id="btn-pause">Pause</button>
+    <button id="btn-reset">Reset</button>
+    <button id="btn-clear">Clear</button>
+    <button id="btn-toggle-console">Toggle Console</button>
+  </div>
+
+  <main>
+    <h1>Hello World Debugger Demo</h1>
+    <p>Use the toolbar to run and step through the demo script.</p>
+
+    <section id="console-panel" class="console visible">
+      <div class="console-header">Console</div>
+      <div id="console-output" class="console-output"></div>
+    </section>
+  </main>
+
+  <script src="hello_toolbar.js"></script>
+</body>
+</html>
