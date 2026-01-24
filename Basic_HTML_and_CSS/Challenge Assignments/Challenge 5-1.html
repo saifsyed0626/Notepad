@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Centered Image</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style> 
+#example1 {
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+#example2 {
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 50px 20px;
+  </style>
+
+
+<style>
+  div.a {
+  text-align: center;
+}
+
+p.normal {
+  font-weight: normal;
+}
+
+p.light {
+  font-weight: lighter;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+</style>
+
+
+</head>
+
+<body>
+
+  <img src="./img/pdx.jpg" alt="Portland" class="center-img">
+
+<h2>border-radius: 25px:</h2>
+<div id="example1">
+  <p>The border-radius property defines the radius of the element's corners.</p>
+</div>
+
+<h2>border-radius: 50px 20px:</h2>
+<div id="example2">
+  <p>If two values are set; the first one is for the top-left and bottom-right corner, the second one for the top-right and bottom-left corner.</p>
+</div>
+
+<h1>The font-weight Property</h1>
+
+<p class="normal">This is a paragraph.</p>
+<p class="light">This is a paragraph.</p>
+<p class="thick">This is a paragraph.</p>
+<p class="thicker">This is a paragraph.</p>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #8e9d1f;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #8e9d1f;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  color: darkblue;   /* font color for all text inside columns */
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a:hover {
+  background-color: yellow;
+  font-size: 18px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Toronto Maple Leafs Scoring List</h2>
+
+<table>
+  <tr>
+    <th>Points</th>
+    <th>Goals</th>
+    <th>Assists</th>
+  </tr>
+  <tr>
+    <td>A.Mathews</td>
+    <td>24</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>J.Tavares</td>
+    <td>22</td>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td>M.Domi</td>
+    <td>8</td>
+    <td>21</td>
+  </tr>
+</table>
+
+<h2>Image Text</h2>
+<p>KONG Skull Island:</p>
+
+<div class="container">
+  <img src="./img/kongskullisland.jpg" alt="Kong Skull Island" style="width:100%;">
+  <div class="bottom-left">Bottom Left</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div>
+  <div class="centered">Centered</div>
+</div>
+
+<nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Home</a>
+  </nav>
+
+  <div class="content">
+    <h1>Information</h1>
+    <p>Scroll down to see the details.</p>
+  </div>
+
+  <h2>Two Equal Columns</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Toronto Maple Leafs are not going to make the playoffs..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Toronto Raptors are going to make the playoffs..</p>
+  </div>
+</div>
+
+<p>Hover your mouse over this links</p>
+
+<a href="https://www.TorontoMapleLeafs.com">TorontoMapleLeafs.com</a>
+<a href="https://www.TorontoRaptors.com">TorontoRaptors.com</a>
+
+<h2>Fade in Overlay</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="./img/beautyandthebeast.jpg" alt="beautyandthebeast" class="image">
+  <div class="overlay">
+    <div class="text">Hello Beautiful!</div>
+  </div>
+</div>
+
+<h1>Ocean Video Clip</h1>
+
+  <video width="600" controls>
+    <source src="Ocean.mp4" type="video/mp4">
+  </video>
+
+  <h1>The video muted attribute</h1>
+
+<video width="320" height="240" controls muted>
+  <source src="Ocean.mp4" type="video/mp4">
+</video>
+
+    <h1>The video autoplay attribute</h1>
+
+    <video width="320" height="240" controls autoplay>
+        <source src="Ocean.mp4" type="video/mp4">
+    </video>
+
+    <h1>The video loop attribute</h1>
+
+    <video width="320" height="240" controls loop>
+        <source src="Ocean.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="Ocean.mp4" type="video/mp4">
+        
+        </video>
+
+    <div class="overlay-text">
+        Welcome to My Website
+    </div>
+</div>
+
+
+
+
+
+<div class="a">
+    <h2>text-align: center:</h2>
+    <p>Author: John Doe<br>
+    <a href="mailto:JohnD@gmail.com">JohnD@gmail.com</a></p>
+</div>
+
+<h1>The footer element</h1>
+
+<footer>
+    <p>Author: John Doe<br>
+    <a href="mailto:JohnD@gmail.com">JohnD@gmail.com</a></p>
+</footer>
+
+
+
+
+</body>
+</html>
